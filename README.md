@@ -1,21 +1,18 @@
 # AddPinyin Plugin for MarcEdit
 A plugin for MarcEdit that allows the user to convert Chinese text in MARC records to Hanyu Pinyin, with certain catalog-record-specific formatting applied. 
 
-## Installation
+## Installation/Usage
 
-[Download the installer](https://github.com/pulibrary/addpinyin-marcedit/releases/latest/download/InstallAddPinyin.exe)
- 
-- Compatible with the Windows version of MarcEdit (versions 6 and up).
-- This plugin does not need to be installed as Administrator.  It should be installed while logged in as the user that will be using the software.
-
-## Usage
-1. Create a backup of the MARC record file to be converted.
-2. Convert the file to MRK format (using the MarcBreaker tool in MarcEdit) and open in MarcEditor. The file must be encoded in UTF-8.  For MARC-8 files, use MarcBreaker to convert the file to UTF-8 before running the plugin, then convert it back to MARC-8 afterwards, if needed.
-3. Open the "Plugins" menu and select "AddPinyin". A dialog will appear warning you that the conversion cannot be undone, and that the MRK file will be automatically saved after conversion. (This is why it is important to back the file up). Click "OK".
-4. A dialog will appear asking you which fields to generate romanization for. Certain fields are selected by default. Use the arrow buttons to specify which fields you would like to convert.
-5. Select whether you want the pinyin to be placed in the original field or the corresponding 880, and also whether you want to swap the order of existing parallel fields accordingly.
-6. Click the “Convert” button.
-7. After romanization is complete, the updated records will be displayed in the MarcEditor. Compile file back to MRC format by opening the “File” menu and selecting “Compile File into MARC”.
+1. [Download the installer](https://github.com/pulibrary/addpinyin-marcedit/releases/latest/download/InstallAddPinyin.exe)
+ - Compatible with the Windows version of MarcEdit (versions 6 and up).
+ - This plugin does not need to be installed as Administrator.  It should be installed while logged in as the user that will be using the software.
+2. Create a backup of the MARC record file to be converted.
+3. Convert the file to MRK format (using the MarcBreaker tool in MarcEdit) and open in MarcEditor. The file must be encoded in UTF-8.  For MARC-8 files, use MarcBreaker to convert the file to UTF-8 before running the plugin, then convert it back to MARC-8 afterwards, if needed.
+4. Open the "Plugins" menu and select "AddPinyin". A dialog will appear warning you that the conversion cannot be undone, and that the MRK file will be automatically saved after conversion. (This is why it is important to back the file up). Click "OK".
+5. A dialog will appear asking you which fields to generate romanization for. Certain fields are selected by default. Use the arrow buttons to specify which fields you would like to convert.
+6. Select whether you want the pinyin to be placed in the original field or the corresponding 880, and also whether you want to swap the order of existing parallel fields accordingly.
+7. Click the “Convert” button.
+8. After romanization is complete, the updated records will be displayed in the MarcEditor. Compile file back to MRC format by opening the “File” menu and selecting “Compile File into MARC”.
 
 ## Functionality
 For each converted field, an 880 field is created containing either the original or romanized text (as specified by the user). A subfield 6 with the appropriate linkage value is automatically added to both the original field and the 880. 
