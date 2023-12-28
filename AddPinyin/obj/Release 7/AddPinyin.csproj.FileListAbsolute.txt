@@ -1,0 +1,43 @@
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\romanization.db
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\AddPinyin.dll.config
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\AddPinyin.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\AddPinyin.pdb
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\EntityFramework.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\MacroInterfaces.DLL
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\mengine7.DLL
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\System.Data.SQLite.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\saxon-he-api-10.2.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\marc82utf8.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\Ude.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\meUTF2MARC.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\Newtonsoft.Json.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Charsets.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\saxon-he-10.2.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.XML.API.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Core.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.Runtime.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Text.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Util.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Security.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.Runtime.JNI.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Management.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Naming.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.SwingAWT.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Corba.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Remoting.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Beans.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.OpenJDK.Media.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\IKVM.AWT.WinForms.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\EntityFramework.xml
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\Release\System.Data.SQLite.xml
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.loadingDialog.resources
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.frmMain.resources
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csproj.GenerateResource.cache
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csproj.CopyComplete
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.dll
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.pdb
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csprojAssemblyReference.cache

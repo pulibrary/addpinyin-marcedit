@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddPinyin", "AddPinyin\AddPinyin.csproj", "{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		DVD-5|Any CPU = DVD-5|Any CPU
+		DVD-5|x86 = DVD-5|x86
+		Release 6|Any CPU = Release 6|Any CPU
+		Release 6|x86 = Release 6|x86
+		Release 7|Any CPU = Release 7|Any CPU
+		Release 7|x86 = Release 7|x86
+		SingleImage|Any CPU = SingleImage|Any CPU
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.CD_ROM|Any CPU.ActiveCfg = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.CD_ROM|Any CPU.Build.0 = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.CD_ROM|x86.ActiveCfg = Release 7|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.CD_ROM|x86.Build.0 = Release 7|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.DVD-5|x86.ActiveCfg = Debug|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.DVD-5|x86.Build.0 = Debug|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 6|Any CPU.ActiveCfg = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 6|Any CPU.Build.0 = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 6|x86.ActiveCfg = Release 6|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 6|x86.Build.0 = Release 6|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 7|Any CPU.ActiveCfg = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 7|Any CPU.Build.0 = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 7|x86.ActiveCfg = Release 7|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.Release 7|x86.Build.0 = Release 7|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.SingleImage|Any CPU.ActiveCfg = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.SingleImage|Any CPU.Build.0 = Release 7|Any CPU
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.SingleImage|x86.ActiveCfg = Release 7|x86
+		{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}.SingleImage|x86.Build.0 = Release 7|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5077972D-7090-4C6E-8CB6-72B8701B792A}
+	EndGlobalSection
+EndGlobal
