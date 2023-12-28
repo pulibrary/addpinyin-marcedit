@@ -1,13 +1,5 @@
 # AddPinyin Plugin for MarcEdit
-A plugin for MarcEdit that allows the user to convert Chinese text in MARC records to Hanyu Pinyin, with certain catalog-record-specific formatting applied.  For each converted field, an 880 field is created containing either the original or romanized text (as specified by the user). A subfield 6 with the appropriate linkage value is automatically added to both the original field and the 880. 
-
-The plugin's functionality complements that of the [OCLC Connexion Pinyin Conversion Macro](https://github.com/pulibrary/oclcpinyin); whereas the OCLC Macro is run on individual fields within a single record, the MarcEdit Plugin is designed for batch processing.  Also, since the plugin runs within MarcEdit, it is independent of a specific catalog.
-
-This plugin can be run on files containing both Chinese and non-Chinese records. The plugin examines the 008 field to identify Chinese records, and leaves everything else untouched.  If a record has romanization added for some but not all Chinese fields, the plugin can add romanization for the remaining unconverted fields (if desired).  The main dialog of the program will tell you how many records contain Chinese text that could potentially be converted.  The user also has the option to swap the order of parallel fields already existing in the records.  (Swapping the fields can be done even if no other conversion is performed on the record set).
-
-The plugin generates pinyin using ALA-LC standards. The output is similar to that produced by the OCLC Macro. Please see the documentation for this marco for specifics. It is difficult to automate romanization with 100% accuracy, so it is always beneficial to manually proofread the results when practical. However, most of the needed adjustments will have to do with spacing, capitalization, and punctuation, not the pinyin itself. Efforts have been made to keep even these minor inaccuracies to a minimum. However, if you notice any errors or would like to suggest new phrases to be included in the dictionary, please go to the "Issues" tab at the top of this github page, and click the "New Issue" button. Alternatively, you can provide feedback using the form below. (Please select the option "Feedback regarding website or software tools".)
-
-https://library.princeton.edu/eastasian/contact
+A plugin for MarcEdit that allows the user to convert Chinese text in MARC records to Hanyu Pinyin, with certain catalog-record-specific formatting applied. 
 
 ## Installation
 
@@ -25,9 +17,22 @@ https://library.princeton.edu/eastasian/contact
 6. Click the “Convert” button.
 7. After romanization is complete, the updated records will be displayed in the MarcEditor. Compile file back to MRC format by opening the “File” menu and selecting “Compile File into MARC”.
 
+## Functionality
+For each converted field, an 880 field is created containing either the original or romanized text (as specified by the user). A subfield 6 with the appropriate linkage value is automatically added to both the original field and the 880. 
+
+The plugin's functionality complements that of the [OCLC Connexion Pinyin Conversion Macro](https://github.com/pulibrary/oclcpinyin); whereas the OCLC Macro is run on individual fields within a single record, the MarcEdit Plugin is designed for batch processing.  Also, since the plugin runs within MarcEdit, it is independent of a specific catalog.
+
+This plugin can be run on files containing both Chinese and non-Chinese records. The plugin examines the 008 field to identify Chinese records, and leaves everything else untouched.  If a record has romanization added for some but not all Chinese fields, the plugin can add romanization for the remaining unconverted fields (if desired).  The main dialog of the program will tell you how many records contain Chinese text that could potentially be converted.  The user also has the option to swap the order of parallel fields already existing in the records.  (Swapping the fields can be done even if no other conversion is performed on the record set).
+
+The plugin generates pinyin using ALA-LC standards. The output is similar to that produced by the OCLC Macro. Please see the documentation for this marco for specifics. It is difficult to automate romanization with 100% accuracy, so it is always beneficial to manually proofread the results when practical. However, most of the needed adjustments will have to do with spacing, capitalization, and punctuation, not the pinyin itself. Efforts have been made to keep even these minor inaccuracies to a minimum. 
+
+## Feedback
+If you notice any errors or would like to suggest new phrases to be included in the dictionary, please go to the "Issues" tab at the top of this github page, and click the "New Issue" button. Alternatively, you can provide feedback using the form below. (Please select the option "Feedback regarding website or software tools".)
+
+https://library.princeton.edu/eastasian/contact
+
 ## Sources
 The macro contains a dictionary of Chinese characters and phrases based on three sources:
 - The [Unihan database](http://unicode.org/charts/unihan.html), copyright 1991-2020, Unicode, Inc. Last updated 2020-02-18.
 - [CC-CEDICT](http://www.mdbg.net/chinese/dictionary?page=cedict), copyright 2020, MDBG. Last updated 2021-04-21.
 - User feedback.
-
