@@ -40,4 +40,5 @@ C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csproj.Gen
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csproj.CopyComplete
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.pdb
-C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csprojAssemblyReference.cache
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csproj.AssemblyReference.cache
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\Release 7\AddPinyin.csproj.CoreCompileInputs.cache

@@ -4,7 +4,6 @@ C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\AddPinyin.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\AddPinyin.pdb
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\EntityFramework.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\EntityFramework.SqlServer.dll
-C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\MacroInterfaces.DLL
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\System.Data.SQLite.DLL
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\System.Data.SQLite.EF6.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\System.Data.SQLite.Linq.dll
@@ -40,3 +39,5 @@ C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 6\AddPinyin.csproj
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\saxon-he-api-10.2.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\saxon-he-10.2.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release 6\System.Data.SQLite.xml
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 6\AddPinyin.csproj.AssemblyReference.cache
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 6\AddPinyin.csproj.CoreCompileInputs.cache

@@ -40,4 +40,5 @@ C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 7\AddPinyin.csproj
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release\saxon-he-api-10.2.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release\saxon-he-10.2.dll
 C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\bin\x86\Release\System.Data.SQLite.xml
-C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 7\AddPinyin.csprojAssemblyReference.cache
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 7\AddPinyin.csproj.AssemblyReference.cache
+C:\Users\tventimi\Desktop\AddPinyin\AddPinyin\obj\x86\Release 7\AddPinyin.csproj.CoreCompileInputs.cache
