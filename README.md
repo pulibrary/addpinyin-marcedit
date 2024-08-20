@@ -24,9 +24,7 @@ This plugin can be run on files containing both Chinese and non-Chinese records.
 The plugin generates pinyin using ALA-LC standards. The output is similar to that produced by the OCLC Macro. Please see the [documentation](https://github.com/pulibrary/oclcpinyin#functionality) for this marco for specifics. It is difficult to automate romanization with 100% accuracy, so it is always beneficial to manually proofread the results when practical. However, most of the needed adjustments will have to do with spacing, capitalization, and punctuation, not the pinyin itself. Efforts have been made to keep even these minor inaccuracies to a minimum. 
 
 ## Feedback
-If you notice any errors or would like to suggest new phrases to be included in the dictionary, please go to the "Issues" tab at the top of this github page, and click the "New Issue" button. Alternatively, you can provide feedback using the form below. (Please select the option "Feedback regarding website or software tools".)
-
-https://library.princeton.edu/eastasian/contact
+If you notice any errors or would like to suggest new phrases to be included in the dictionary, please go to the "Issues" tab at the top of this github page, and click the "New Issue" button. 
 
 ## Sources
 The macro contains a dictionary of Chinese characters and phrases based on three sources:
