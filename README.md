@@ -4,7 +4,7 @@ A plugin for MarcEdit that allows the user to convert Chinese text in MARC recor
 ## Installation/Usage
 
 1. [Download the installer](https://github.com/pulibrary/addpinyin-marcedit/releases/latest/download/InstallAddPinyin.exe)
-  - Compatible with the Windows version of MarcEdit (versions 6 and up).
+  - Compatible with the Windows version of MarcEdit (between versions 6 and 7.3.x - not yet compatiable with 7.5.x).
   - This plugin does not need to be installed as Administrator.  It should be installed while logged in as the user that will be using the software.
 2. Create a backup of the MARC record file to be converted.
 3. Convert the file to MRK format (using the MarcBreaker tool in MarcEdit) and open in MarcEditor. The file must be encoded in UTF-8.  For MARC-8 files, use MarcBreaker to convert the file to UTF-8 before running the plugin, then convert it back to MARC-8 afterwards, if needed.
