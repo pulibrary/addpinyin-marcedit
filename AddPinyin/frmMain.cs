@@ -7,26 +7,26 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
+
 namespace AddPinyin
 {
-
     public partial class frmMain : Form
     {
         private SortedDictionary<int, ChineseRecord> chineseRecords;
         private SortedDictionary<int, ChineseRecord> allRecords;
-        
+
         private SortedSet<string> availableTags = new SortedSet<string>();
         private SortedSet<string> selectedTags = new SortedSet<string>();
         private List<string> defaultSelectedTags = new List<string>() {"1xx","2xx","3xx","4xx","50x","51x",
             "521","522","524","525","526","53x","54x","55x","56x","58x","59x","6xx","7xx","8xx"};
-        
+
         private string cjkPattern = @"[\p{IsCJKCompatibility}\p{IsCJKUnifiedIdeographsExtensionA}\p{IsCJKUnifiedIdeographs}\p{IsCJKCompatibilityIdeographs}]";
         private string alphanumPattern = @"[\p{L}\p{N}\p{M}]";
-        private romanizationDataSetTableAdapters.ChinesePinyinTableAdapter pinyinTableAdapter;
-        private romanizationDataSet.ChinesePinyinDataTable pinyinTable;
-        private int? maxChineseLen;
+
+        private Dictionary<string, string> pinyinDictionary = new Dictionary<string, string>();
+        private int maxChineseLen = 0;
         public frmMain()
-        { 
+        {
             InitializeComponent();
             System.Diagnostics.StackFrame[] frames = new System.Diagnostics.StackTrace().GetFrames();
             System.Reflection.Assembly initialAssembly = (from f in frames
@@ -43,16 +43,33 @@ namespace AddPinyin
             {
                 MessageBox.Show("Cannot load MarcEdit libraries.\nPlease confirm that MarcEdit is installed.\n" + ex.ToString());
                 Application.Exit();
-            }            
+            }
 
             chineseRecords = new SortedDictionary<int, ChineseRecord>();
             allRecords = new SortedDictionary<int, ChineseRecord>();
 
-            pinyinTableAdapter = new romanizationDataSetTableAdapters.ChinesePinyinTableAdapter();
-            pinyinTable = pinyinTableAdapter.GetData();
+            //changes location where plugin looks for Romanization CSV file
+            string profilepath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string mepath = profilepath + "\\marcedit75\\plugins75";
+            if (!Directory.Exists(mepath))
+            {
+                mepath = profilepath + "\\marcedit7\\plugins";
+            }
+            if (!Directory.Exists(mepath))
+            {
+                mepath = profilepath + "\\marcedit\\plugins";
+            }
 
-            //maximum length of a Chinese character string found in Romanization table
-            maxChineseLen = Convert.ToInt32(pinyinTableAdapter.MaxLenQuery());
+            mepath = AppDomain.CurrentDomain.GetData("DataDirectory").ToString();
+            char[] separators = new char[] { ',' };
+            foreach (string line in File.ReadLines(mepath + "\\pinyin.csv").Skip(1)) // Skip header
+            {
+                string[] columns = line.Split(separators, 2);
+                var chinese = columns[0];
+                var pinyin = columns[1];
+                maxChineseLen = Math.Max(maxChineseLen, chinese.Length);
+                pinyinDictionary[chinese] = pinyin;
+            }
 
             LoadChineseRecords();
 
@@ -164,11 +181,11 @@ namespace AddPinyin
                             if ((tag != "880" && fieldOriginals.ContainsKey(seqno)) ||
                                 tag == "880" && field880s.ContainsKey(seqno))
                             {
-                                MessageBox.Show("Error in record #" + (recIndex+1) + ": The sequence number " +
+                                MessageBox.Show("Error in record #" + (recIndex + 1) + ": The sequence number " +
                                     m.Groups[1].Value + " appears in subfield $6 of multiple field pairs. " +
                                     "Please resolve this problem and run the macro again.");
                                 return 0;
-                            }                            
+                            }
                             if (tag == "880")
                             {
                                 field880s[seqno] = body;
@@ -184,7 +201,7 @@ namespace AddPinyin
                 {
                     if (!fieldOriginals.ContainsKey(seqno) || !field880s.ContainsKey(seqno))
                     {
-                        MessageBox.Show("Error in record #" + (recIndex+1) + ": The sequence number " +
+                        MessageBox.Show("Error in record #" + (recIndex + 1) + ": The sequence number " +
                                     seqno.ToString("D2") + " only appears in one field with no parallel. " +
                                     "Please resolve this problem and run the macro again.");
                         return 0;
@@ -220,7 +237,7 @@ namespace AddPinyin
                     else
                     {
                         newrec.addLine(reci);
-                    }                   
+                    }
                 }
                 if (modified)
                 {
@@ -262,25 +279,23 @@ namespace AddPinyin
             while (reader.Peek() > -1)
             {
                 line = variables.objEditor.ReadLine(reader);
-                if (line.Trim().Length > 0)
+
+                if (line.Trim().Length > 5)
                 {
                     try
                     {
                         string tag = line.Substring(1, 3);
 
                         //determine is record is MARC-8 or UTF-8 by looking at leader field.
-                        if (tag.Equals("LDR") && line.Substring(15, 1).Equals(" "))
+                        if (tag.Equals("LDR") && line.Length == 30 && line.Substring(15, 1).Equals(" "))
                         {
                             isMARC8 = true;
                         }
 
                         //determine if record is Chinese by looking at 008 field
-                        if (tag.Equals("008"))
+                        if (tag.Equals("008") && line.Length == 46 && line.Substring(41, 3).Equals("chi"))
                         {
-                            if (line.Substring(41, 3).Equals("chi"))
-                            {
-                                isChinese = true;
-                            }
+                            isChinese = true;
                         }
 
                         //determine if there are fields with Chinese characters but no linkage fields
@@ -652,27 +667,26 @@ namespace AddPinyin
                                 continue;
                             }
                             sjk = sjk.Replace("'", "''");
-                            DataRow[] results = pinyinTable.Select("[chinese]='" + sjk + "'");
-                            if (results.Count() > 0)
+                            if (pinyinDictionary.ContainsKey(sjk))
                             {
-                                pyj = results[0][1].ToString();
+                                pyj = pinyinDictionary[sjk];
                                 //MessageBox.Show(stri + "\n" + sjk + "\n" + pyj);
                                 if (!sjk.Equals(pyj))
                                 {
-                                    if (Regex.IsMatch(pyj,"^[^\\[\\(]") && firstalpha) //capitalize first character of each subfield
-                                    {                                        
+                                    if (Regex.IsMatch(pyj, "^[^\\[\\(]") && firstalpha) //capitalize first character of each subfield
+                                    {
                                         pyj = pyj.Substring(0, 1).ToUpper() + pyj.Substring(1);
                                         firstalpha = false;
                                     }
                                     j += k - 1;
                                     break;
                                 }
-                            }                        
+                            }
                         }
                     } else
                     {
                         firstalpha = false;
-                    } 
+                    }
                     //MessageBox.Show(stri + "\n" + pyi);
                     //various punctutation/spacing tweaks
                     if (pyi.Length > 2 && !pyj.Equals(" "))
@@ -692,7 +706,7 @@ namespace AddPinyin
                             pyi += " ";
                         }
                     }
-                    
+
                     if (pyj.Length > 0)
                     {
                         pyi += pyj;
@@ -701,7 +715,7 @@ namespace AddPinyin
                     {
                         pyi += nextchar;
                     }
-                    
+
                 }
                 //capitalization/spacing tweaks
                 pyi = Regex.Replace(pyi, @"([;\(]\s*)([a-z])", m => m.Groups[1].Value + m.Groups[2].Value.ToUpper());
@@ -709,7 +723,7 @@ namespace AddPinyin
                 pyi = Regex.Replace(pyi, @"([""\u201C])([^""\u201C\u201D]+)([""\u201D])", m => @" " + m.Groups[1].Value + m.Groups[2].Value.Substring(0, 1).ToUpper() + m.Groups[2].Value.Substring(1) + m.Groups[3].Value + " ");
 
                 pyi = processNumbers(pyi, tag);
-;
+                ;
                 if (isName) //special formatting for personal names
                 {
                     string possibleComma = ",";
@@ -797,7 +811,7 @@ namespace AddPinyin
                 availableTags.Add(item);
                 selectedTags.Remove(item);
                 refreshTagLists();
-                if(!swapCheckbox.Checked)
+                if (!swapCheckbox.Checked)
                 {
                     field880radio.Enabled = false;
                     fieldOriginalRadio.Enabled = false;
@@ -838,7 +852,7 @@ namespace AddPinyin
         private void convertButton_Click(object sender, EventArgs e)
         {
             SortedDictionary<int, ChineseRecord> convertedRecords = addPinyinToRecords();
-            int modRecCount = convertedRecords.Count;            
+            int modRecCount = convertedRecords.Count;
             this.progressLabel.Text = "Saving file...";
             this.Refresh();
             foreach (KeyValuePair<int, ChineseRecord> keyval in convertedRecords)
@@ -853,12 +867,12 @@ namespace AddPinyin
             writeRecordsToFile();
 
             string msg = "";
-             
+
             if (convertedRecords.Count > 0)
             {
                 msg = "Romanization was added to " + convertedRecords.Count + " records.\n";
             }
-            if(msg == "" || (swapCheckbox.Checked && modRecCount > convertedRecords.Count))
+            if (msg == "" || (swapCheckbox.Checked && modRecCount > convertedRecords.Count))
             {
                 msg += modRecCount + " records were modified.";
             }

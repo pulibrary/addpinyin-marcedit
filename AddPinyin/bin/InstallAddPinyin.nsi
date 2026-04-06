@@ -6,7 +6,7 @@
 
 ; General
 !define dllname "Release\AddPinyin.dll"
-!define dbname "Release\romanization.db"
+!define dbname "Release\pinyin.csv"
 !define dllname6 "Release 6\AddPinyin.dll"
 !define displayname "AddPinyin Plugin for MarcEdit"
 !define menginedll "C:\Program Files\MarcEdit 6\mengine60.dll"

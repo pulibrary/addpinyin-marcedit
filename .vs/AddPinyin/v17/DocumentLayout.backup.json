@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\pinyin.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\pinyin.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|C:\\Users\\tventimi\\Desktop\\AddPinyin\\addpinyin\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\chineserecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\chineserecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\variables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\variables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|c:\\users\\tventimi\\desktop\\addpinyin\\addpinyin\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{543F5A4A-6AE4-46DD-A4A1-669DECD90DD0}|AddPinyin\\AddPinyin.csproj|solutionrelative:addpinyin\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChineseRecord.cs",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\ChineseRecord.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\ChineseRecord.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\ChineseRecord.cs",
+              "RelativeToolTip": "AddPinyin\\ChineseRecord.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T14:13:33.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "variables.cs",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\variables.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\variables.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\variables.cs",
+              "RelativeToolTip": "AddPinyin\\variables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T14:00:57.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "AddPinyin\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T13:39:13.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\Connection.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\Connection.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\Connection.cs",
+              "RelativeToolTip": "AddPinyin\\Connection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T13:31:23.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\Settings.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\Settings.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\Settings.cs",
+              "RelativeToolTip": "AddPinyin\\Settings.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T13:30:49.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "pinyin.csv",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\pinyin.csv",
+              "RelativeDocumentMoniker": "AddPinyin\\pinyin.csv",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\pinyin.csv",
+              "RelativeToolTip": "AddPinyin\\pinyin.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-04-06T13:17:57.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\frmMain.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\frmMain.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\frmMain.cs",
+              "RelativeToolTip": "AddPinyin\\frmMain.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwEIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T13:08:42.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\frmMain.cs",
+              "RelativeDocumentMoniker": "AddPinyin\\frmMain.cs",
+              "ToolTip": "C:\\Users\\tventimi\\Desktop\\AddPinyin\\AddPinyin\\frmMain.cs [Design]",
+              "RelativeToolTip": "AddPinyin\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T13:09:02.096Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
