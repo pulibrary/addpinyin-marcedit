@@ -1,5 +1,5 @@
 # AddPinyin Plugin for MarcEdit
-A plugin for MarcEdit that allows the user to convert Chinese text in MARC records to Hanyu Pinyin, with certain catalog-record-specific formatting applied. 
+A plugin for MarcEdit that allows the user to convert Chinese text in MARC records to Hanyu Pinyin, based on ALA-LC standards.
 
 ## Installation/Usage
 
@@ -28,6 +28,6 @@ If you notice any errors or would like to suggest new phrases to be included in 
 
 ## Sources
 The macro contains a dictionary of Chinese characters and phrases based on three sources:
-- The [Unihan database](http://unicode.org/charts/unihan.html), copyright 1991-2024, Unicode, Inc. Last updated 2023-07-15.
-- [CC-CEDICT](http://www.mdbg.net/chinese/dictionary?page=cedict), copyright 2024, MDBG. Last updated 2024-07-10.
+- The [Unihan database](http://unicode.org/charts/unihan.html), copyright 1991-2026, Unicode, Inc. Last updated 2025-08-15
+- [CC-CEDICT](http://www.mdbg.net/chinese/dictionary?page=cedict), copyright 202y, MDBG. Last updated 2026-01-31.
 - User feedback.
